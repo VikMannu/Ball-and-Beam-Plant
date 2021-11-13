@@ -1,4 +1,4 @@
-package variablesSalida;
+package outputVariables;
 
 public class Voltage {
 	public static final String[] nameUniverse = { "NL", "NS", "Z", "PS", "PL" };

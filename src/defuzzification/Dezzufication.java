@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 import fuzzification.Inference;
 import fuzzification.RulesOn;
-import variablesSalida.Voltage;
+import outputVariables.Voltage;
 
 public class Dezzufication {
 	public static double voltageInput (double xPosition, double xVelocity) {

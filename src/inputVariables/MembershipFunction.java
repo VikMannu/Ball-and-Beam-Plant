@@ -1,6 +1,6 @@
-package fuzzification;
+package inputVariables;
 
-public class FuncionPertenencia {
+public class MembershipFunction {
 	public static final int NEGATIVO = -1;
 	public static final int POSITIVO = 1;
 

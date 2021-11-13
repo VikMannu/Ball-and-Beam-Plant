@@ -2,7 +2,7 @@ package fuzzification;
 
 import java.util.ArrayList;
 
-import variablesEntrada.*;
+import inputVariables.*;
 
 public class Inference {
 	private static double[][] productoMamdani(double xPosition, double xVelocity) {

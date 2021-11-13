@@ -1,6 +1,4 @@
-package variablesEntrada;
-
-import fuzzification.FuncionPertenencia;
+package inputVariables;
 
 public class Velocity {
 	public static final String[] nameUniverse = { "NL", "NS", "Z", "PS", "PL" };
@@ -12,23 +10,23 @@ public class Velocity {
 	private static final double[] PL = { 2, 4 };
 
 	private static double perteneciaNL(double x) {
-		return FuncionPertenencia.fRecta(x, NL[0], NL[1], FuncionPertenencia.NEGATIVO);
+		return MembershipFunction.fRecta(x, NL[0], NL[1], MembershipFunction.NEGATIVO);
 	}
 
 	private static double perteneciaNS(double x) {
-		return FuncionPertenencia.fTriangular(x, NS[0], NS[1], NS[2]);
+		return MembershipFunction.fTriangular(x, NS[0], NS[1], NS[2]);
 	}
 
 	private static double perteneciaZ(double x) {
-		return FuncionPertenencia.fTriangular(x, Z[0], Z[1], Z[2]);
+		return MembershipFunction.fTriangular(x, Z[0], Z[1], Z[2]);
 	}
 
 	private static double perteneciaPS(double x) {
-		return FuncionPertenencia.fTriangular(x, PS[0], PS[1], PS[2]);
+		return MembershipFunction.fTriangular(x, PS[0], PS[1], PS[2]);
 	}
 
 	private static double perteneciaPL(double x) {
-		return FuncionPertenencia.fRecta(x, PL[0], PL[1], FuncionPertenencia.POSITIVO);
+		return MembershipFunction.fRecta(x, PL[0], PL[1], MembershipFunction.POSITIVO);
 	}
 
 	public static double[] tabultedPertenencia(double x) {
